@@ -21,7 +21,6 @@ def form_data():
 @app.route('/details/<text>/<password>')
 def shubh(text,password):
     s = ParseSite(str(text),str(password))
-    print text , password
     head = s.extract_headings()
     lis = pieplot(head,str(text))
     return render_template('graph.html',names = lis)
