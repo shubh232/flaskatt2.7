@@ -1,4 +1,4 @@
-#Flask attendance Graphing
+# Flask attendance Graphing
 ## Local server
 Start a local webserver by running:
 
