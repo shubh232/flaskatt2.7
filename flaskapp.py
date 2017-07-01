@@ -25,5 +25,18 @@ def shubh(text,password):
     lis = pieplot(head,str(text))
     return render_template('graph.html',names = lis)
 
+@app.route('/about')
+def calc_input():
+    p = request.form['present']
+    t = request.form['total']
+    pw = request.form['week']
+    return redirect(url_for('calc_atten',p=p,t=t,pw=pw))
+
+@app.route('/about/<p>/<t>/<pw>')
+def calc_atten(p,t,pw):
+    cal = CalcAtten(str(p),str(t),str(pw))
+    require = cal.req_lec()
+    return render_template('atten_calculator.html', required_lecture = require)
+
 if __name__ == '__main__':
     app.run()
