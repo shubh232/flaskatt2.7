@@ -23,7 +23,7 @@ def shubh(text,password):
     s = ParseSite(str(text),str(password))
     head = s.extract_headings()
     lis = pieplot(head,str(text))
-    return render_template('graph.html',names = lis)    
+    return render_template('graph.html',names = lis)
 
 if __name__ == '__main__':
     app.run()
