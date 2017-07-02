@@ -1,6 +1,6 @@
 # Flask attendance Graphing
 ## Local server
-Start a local webserver by running:
+Start a local  webserver by running:
 
 ```bash
 python app.py
