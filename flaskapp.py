@@ -4,6 +4,9 @@ from flask import Flask, request, flash, url_for, redirect, \
      render_template, abort, send_from_directory
 from parsesite import ParseSite
 from mat import pieplot
+from attencalc import CalcAtten
+
+
 app = Flask(__name__)
 app.config.from_pyfile('flaskapp.cfg')
 
@@ -25,7 +28,14 @@ def shubh(text,password):
     lis = pieplot(head,str(text))
     return render_template('graph.html',names = lis)
 
+
+
 @app.route('/about')
+
+def attendance():
+    return render_template('atten_input.html')
+
+@app.route('/about',methods=['POST'])
 def calc_input():
     p = request.form['present']
     t = request.form['total']
