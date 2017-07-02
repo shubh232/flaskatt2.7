@@ -73,9 +73,9 @@
             <div class="col-lg-12 text-center">
                 <h1>A graphing initiative</h1>
                 <p class="lead">View your attendance graphically! So you can loathe about it in more than one dimensions!</p>
-                <ul class="list-unstyled">
+                <ul>
                     {% for name in names %}
-                    <img src="/static/graphs/{{ name }}"/>
+                    <img src="/static/graphs/{{ name }}" class="img-responsive col-lg-6"/>
                     {% endfor %}
 
                 </ul>
