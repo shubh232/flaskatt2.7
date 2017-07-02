@@ -46,19 +46,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Anything</a>
+                <a class="navbar-brand" href="/">Anything</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="#">About</a>
+                        <a href="/about">Attendance Calculator</a>
                     </li>
                     <li>
-                        <a href="#">Main Page</a>
+                        <a href="/">Main Page</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="/">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -75,17 +75,26 @@
                 <h1>A graphing initiative</h1>
                 <p class="lead">View your attendance graphically! So you can loathe about it in more than one dimensions!</p>
                 <ul class="list-unstyled">
-                        <h1>Enter some text</h1>
-    <form action="." method="POST">
-        <input type="text" name="text" placeholder="enter username">
-        <input type="password" name="password" placeholder="enter password">
-        <input type="submit" name="my-form" value="Send">
-    </form>
-
-
+                        <h3>Enter Your Details</h3>
                 </ul>
+                </div>
+    <div class="col-lg-6 col-lg-offset-3 " align="center">
+    <form action="." method="POST">
+        <div class="form-group">
+            <input type="text" class="form-control" name="text" placeholder="enter username" required="true">
+        </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="password" placeholder="enter password" required="true">
+        </div>
+        
+        <input type="submit" class="btn btn-default btn-block" name="my-form" value="Send">
+    </form>
+    </div>
 
-            </div>
+
+                
+
+            
         </div>
         <!-- /.row -->
 
