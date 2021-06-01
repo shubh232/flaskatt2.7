@@ -23,6 +23,6 @@ setup(name='FlaskApp',
 'pytz==2017.2',
 'requests==2.18.1',
 'six==1.10.0',
-'urllib3==1.21.1',
+'urllib3==1.26.5',
 'Werkzeug==0.12.2'],
      )
